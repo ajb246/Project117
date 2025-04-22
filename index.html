@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Art Portfolio</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <style>
+        .navbar {
+            padding: 1rem;
+        }
+        .navbar-brand {
+            font-weight: bold;
+            font-size: 1.5rem;
+        }
+        .btn-signin {
+            border-radius: 20px;
+        }
+        footer {
+            background-color: #f8f9fa;
+            padding: 1rem 0;
+            text-align: center;
+        }
+        .navbar-nav {
+            margin-left: auto;
+            margin-right: auto;
+        }
+        footer {
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+            background-color: #f8f9fa;
+            padding: 1rem 0;
+            text-align: center;
+            z-index: 1000;
+            border-top: 1px solid #dee2e6;
+        }
+        .jumbotron-img {
+            background-image: url('Images/jumbotron.png'); /* Replace with your actual image path */
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+            height: 100vh; /* Full screen height */
+            padding: 0; /* Remove default padding */
+        }
+
+        .jumbotron-img .container {
+            background-color: rgba(0, 0, 0, 0.5); /* Optional: dark overlay for text readability */
+            padding: 2rem;
+            border-radius: 10px;
+        }
+
+        .jumbotron-img h1,
+        .jumbotron-img p {
+            color: #fff;
+        }
+
+
+    </style>
+</head>
+<body>
+
+<!-- Navbar -->
+<nav class="navbar navbar-expand-md navbar-dark bg-dark">
+    <div class="container-fluid">
+        <!-- Logo -->
+        <a class="navbar-brand d-flex align-items-center" href="index.html">
+            <img src="Images/my_logo.jpg" alt="Art Portfolio Logo" width="40" height="40" class="me-2">
+            <span>Narvaez</span>
+        </a>
+
+
+        <!-- Toggler for mobile -->
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mainNavbar">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <!-- Collapsible content -->
+        <div class="collapse navbar-collapse justify-content-between" id="mainNavbar">
+
+            <!-- Centered Menu -->
+            <ul class="navbar-nav mx-auto mb-2 mb-md-0">
+                <li class="nav-item">
+                    <a class="nav-link" href="index-about-page.html">About</a>
+                </li>
+
+                <!-- Dropdown for Art -->
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="artDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                        Art
+                    </a>
+                    <ul class="dropdown-menu" aria-labelledby="artDropdown">
+                        <li><a class="dropdown-item" href="index-art-gallery.html">Paintings & Drawings</a></li>
+                        <li><a class="dropdown-item" href="index-art-gallery.html">Ceramics & Sculptures</a></li>
+                        <li><a class="dropdown-item" href="index-art-gallery.html">Other Art</a></li>
+                    </ul>
+                </li>
+
+                <li class="nav-item">
+                    <a class="nav-link" href="contact.html">Contact Us</a>
+                </li>
+            </ul>
+
+            <!-- Sign In Button -->
+            <a class="btn btn-outline-light btn-signin" href="contact.html">Sign In</a>
+        </div>
+    </div>
+</nav>
+
+<!-- Jumbotron -->
+<div class="jumbotron-img d-flex align-items-center text-center text-white">
+    <div class="container">
+        <h1 class="display-4">Art in New Jersey</h1>
+        <p class="lead">A curated collection of visual masterpieces by emerging young artists.</p>
+        <a href="index-art-gallery.html" class="btn btn-primary btn-lg">Browse Gallery</a>
+    </div>
+</div>
+
+
+<!-- Content Section -->
+<div class="container text-center my-5">
+    <h2>Welcome to the Art Gallery of Milena Narvaez</h2>
+    <p class="lead">Discover unique artworks and creative expressions.</p>
+</div>
+
+<div class="container my-5">
+    <div class="row justify-content-center">
+
+        <div class="col-md-4 mb-4">
+            <div class="card" style="width: 100%;">
+                <img class="card-img-top" src="Images/under_sea.png" alt="Card image cap">
+                <div class="card-body">
+                    <h5 class="card-title">Under The Sea</h5>
+                    <p class="card-text">Ceramics</p>
+                    <a href="index-artwork-Under-The-Sea.html" class="btn btn-primary">Go</a>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-md-4 mb-4">
+            <div class="card" style="width: 100%;">
+                <img class="card-img-top" src="Images/master_copy.png" alt="Master Copy">
+                <div class="card-body">
+                    <h5 class="card-title">Master Copy</h5>
+                    <p class="card-text">Pastel Pencils</p>
+                    <a href="index-artwork-master-copy.html" class="btn btn-primary">Go</a>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-md-4 mb-4">
+            <div class="card" style="width: 100%;">
+                <img class="card-img-top" src="Images/b_gon.png" alt="Card image cap">
+                <div class="card-body">
+                    <h5 class="card-title">B Gon</h5>
+                    <p class="card-text">Sculpture</p>
+                    <a href="index-artwork-b-gone.html" class="btn btn-primary">Go</a>
+                </div>
+            </div>
+        </div>
+
+    </div>
+</div>
+
+
+<!-- Footer -->
+<footer>
+    <div class="container">
+        <span class="text-muted">&copy; Alejandro Blanco, 2025 | Terms Of Use | Privacy Statement</span>
+    </div>
+</footer>
+
+<!-- Bootstrap JS Bundle -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"></script>
+
+</body>
+</html>
